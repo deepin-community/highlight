@@ -1,0 +1,23 @@
+From a91a4e2acadccc00e62e835b894e442722098b64 Mon Sep 17 00:00:00 2001
+From: David Bremner <bremner@debian.org>
+Date: Sat, 26 Jan 2013 14:32:49 -0400
+Subject: [PATCH 3/3] Add on to LDFLAGS rather than overwriting them.
+
+This is again useful for handling hardening flags on Debian.
+---
+ src/makefile | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/src/makefile b/src/makefile
+index 93a75b7..ae728e2 100644
+--- a/src/makefile
++++ b/src/makefile
+@@ -67,7 +67,7 @@ ifdef PIC
+ 	CFLAGS+=-fPIC
+ endif
+ 
+-LDFLAGS = -ldl
++LDFLAGS += -ldl
+ # Do not strip by default (Mac OS X lazy pointer issues)
+ # Add -static to avoid linking with shared libs (can cause trouble when highlight
+ # is run as service)

@@ -1,0 +1,115 @@
+This package was debianized by André Simon <as@andre-simon.de> on
+Tue, 13 Jan 2009 03:48:39 +0100.
+
+It was downloaded from http://www.andre-simon.de/zip/download.html
+
+Upstream Author: andre simon <as@andre-simon.de>
+
+Files: *
+Copyright: © 2002-2010 Andre Simon <as@andre-simon.de>
+License: GPL3+
+ This program is free software; you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation; either version 3 of the License, or   
+ (at your option) any later version.                                 
+
+Files: src/core/astyle/*
+Copyright: © 1998-2007 Tal Davidson, Jim Pattee <jimp03 at email.com>
+License: LGPL2.1+
+ The "Artistic Style" project, including all files needed to
+ compile it, is free software; you can redistribute it and/or
+ modify it under the terms of the GNU Lesser General Public
+ License as published by the Free Software Foundation; either
+ version 2.1 of the License, or (at your option) any later
+ version.
+
+ This program is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU Lesser General Public License for more details.
+
+ You should have received a copy of the GNU Lesser General Public
+ License along with this project; if not, write to the
+ Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor,
+ Boston, MA  02110-1301, USA.
+
+Files: src/core/re/*
+Copyright: © 2003-2008 Jeffery Stuart <stuart at cs.unr.edu>
+Upstream: http://jeff.bleugris.com/projects/download.php?file=re/regexp.tar.gz
+License: GPL 2-3
+ Delivery-date: Sat, 23 May 2009 17:00:47 -0300
+ Message-Id: <F90CDA80-CDC2-4F0A-923D-3082411DC626@gmail.com>
+ From: Jeff Stuart <cpunerd@gmail.com>
+ To: David Bremner <bremner-dated-1244284424.d94858@pivot.cs.unb.ca>
+ In-Reply-To: <87fxewqfcd.wl%bremner@pivot.cs.unb.ca>
+ Subject: Re: GPL version for your regexp library.
+ Date: Sat, 23 May 2009 23:00:30 +0300
+
+ Sounds fine by me. You have my Official permission to use the C++  
+ regexp engine under GPL 2, GPL 3 and every sub version inbetween. If  
+ you need anything else, let me know.
+
+ Jeff Stuart
+
+ Sent from my iPhone
+
+ On May 23, 2009, at 13:32, David Bremner <bremner@unb.ca> wrote:
+
+ >
+ > Hi;
+ >
+ > Do you intend to license your regexp library under exactly version 2
+ > of your software, or would later versions be OK too?  I ask because I
+ > am looking at a project where the author tries to use your regex
+ > library with some other library that is only GPL 3 or later?  Of
+ > course it is up to you, but it would save me a headache if you would
+ > agree to GPL 2 or later.
+ >
+ > All the best,
+ >
+ > David
+
+Files: src/core/cli/arg_parser.*
+Copyright: © 2006-2008 Antonio Diaz Diaz <ant_diaz at teleline.es>
+License: GPL 3+
+ This program is free software: you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation, either version 3 of the License, or
+ (at your option) any later version.
+
+ This program is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+
+ You should have received a copy of the GNU General Public License
+ along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+Files: src/core/Diliculum/*
+Copyright: © 2005-2010 by Leandro Motta Barros
+License: MIT
+ Permission is hereby granted, free of charge, to any person obtaining a copy 
+ of this software and associated documentation files (the "Software"), to     
+ deal in the Software without restriction, including without limitation the   
+ rights to use, copy, modify, merge, publish, distribute, sublicense, and/or  
+ sell copies of the Software, and to permit persons to whom the Software is   
+ furnished to do so, subject to the following conditions:                     
+                                                                              
+ The above copyright notice and this permission notice shall be included in   
+ all copies or substantial portions of the Software.                          
+                                                                              
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR   
+ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,     
+ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.  IN NO EVENT SHALL THE 
+ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER       
+ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING      
+ FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS 
+ IN THE SOFTWARE.                                                             
+
+Files: debian/*
+Copyright: © 2002-2008, Andre Simon <as@andre-simon.de>
+	   © 2009-2010 David Bremner <bremner@debian.org>
+License: Same as highlight
+
+On Debian systems, the GPL version 3 can be found as
+`/usr/share/common-licenses/GPL-3'

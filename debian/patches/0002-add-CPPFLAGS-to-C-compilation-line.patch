@@ -1,0 +1,23 @@
+From fb8638818d823c71a1eec9c3a233fd5bda83535d Mon Sep 17 00:00:00 2001
+From: David Bremner <bremner@debian.org>
+Date: Sat, 26 Jan 2013 13:59:13 -0400
+Subject: [PATCH 2/3] add CPPFLAGS to C++ compilation line.
+
+This is needed for hardening flags.
+---
+ src/makefile | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/src/makefile b/src/makefile
+index df4adf1..93a75b7 100644
+--- a/src/makefile
++++ b/src/makefile
+@@ -74,7 +74,7 @@ LDFLAGS = -ldl
+ #LDFLAGS = ${LDFLAGS} -s
+ #LDFLAGS= -Wl,--as-needed
+ 
+-CXX_COMPILE=${CXX} ${CFLAGS} -c -I ${INCLUDE_DIR} ${LUA_CFLAGS}
++CXX_COMPILE=${CXX} ${CFLAGS} ${CPPFLAGS} -c -I ${INCLUDE_DIR} ${LUA_CFLAGS}
+ 
+ # Data directories (data dir, configuration file dir)
+ CXX_DIR=-DHL_DATA_DIR=\"${HL_DATA_DIR}\" -DHL_CONFIG_DIR=\"${HL_CONFIG_DIR}\"

@@ -1,0 +1,5 @@
+extras/web_plugins/dokuwiki/*
+extras/web_plugins/movabletype/*
+extras/web_plugins/wordpress/*
+extras/swig/*.py
+extras/highlight_pipe.*

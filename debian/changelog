@@ -1,0 +1,390 @@
+highlight (3.41-2) unstable; urgency=medium
+
+  * Fix location of examples (Closes: #904727).
+  * Fix Vcs-* to point to salsa
+
+ -- David Bremner <bremner@debian.org>  Fri, 27 Jul 2018 17:25:44 +0800
+
+highlight (3.41-1) unstable; urgency=medium
+
+  * New upstream release
+  * Upstream now includes a patch from James Clark to fix sparc64 (and other)
+    builds (Closes: #687740).
+
+ -- David Bremner <bremner@debian.org>  Sun, 03 Dec 2017 13:12:56 -0400
+
+highlight (3.39-1) unstable; urgency=medium
+
+  [ Helmut Grohne ]
+  * Fix FTCBFS: (Closes: #875886).
+    + Let dh_auto_build pass cross tools to make.
+    + make pkg-config substitutable for cross compilation
+  [ David Bremner ]
+  * new upstream version
+
+ -- David Bremner <bremner@debian.org>  Sun, 15 Oct 2017 09:11:33 -0300
+
+highlight (3.38-1) unstable; urgency=medium
+
+  * New upstream version
+  * Drop uploader with no uploads since 2010
+  * Use https for Vcs-*
+  * use debhelper compat level 10
+  * Assert compliance with policy 4.0.0
+
+ -- David Bremner <bremner@debian.org>  Sun, 02 Jul 2017 17:49:51 -0300
+
+highlight (3.18-3) unstable; urgency=medium
+
+  * Upload to unstable (Closes: #723688, #723685)
+
+ -- David Bremner <bremner@debian.org>  Fri, 15 Aug 2014 17:36:55 -0700
+
+highlight (3.18-2) experimental; urgency=medium
+
+  * Merge perl related changes from 3.9-1.1
+
+ -- David Bremner <bremner@debian.org>  Sat, 09 Aug 2014 22:04:16 -0300
+
+highlight (3.18-1) experimental; urgency=medium
+
+  * New upstream release
+  * upload to experimental because of API changes.
+
+ -- David Bremner <bremner@debian.org>  Thu, 07 Aug 2014 22:25:44 -0300
+
+highlight (3.12+svn83-1) experimental; urgency=low
+
+  * Upstream snapshot.
+  * Bug fix: "Segmentation fault with --force command line switch on
+    unknown file type.", thanks to Jussi Judin (Closes: #698718).
+  * Use debhelper compat level 9
+  * Enable hardening flags (several patches added).
+  * Bump Standards-Version to 3.9.4, no changes.
+
+ -- David Bremner <bremner@debian.org>  Sat, 26 Jan 2013 14:39:00 -0400
+
+highlight (3.9-1.1) unstable; urgency=medium
+
+  * Non-maintainer upload.
+  * Fix "hardcodes /usr/lib/perl5":
+    - make debian/libhighlight-perl.install executable and use
+      $Config{vendorarch} there
+    - use debhelper (compat level) 9
+    (Closes: #752347)
+
+ -- gregor herrmann <gregoa@debian.org>  Sat, 02 Aug 2014 17:41:29 +0200
+
+highlight (3.9-1) unstable; urgency=low
+
+  * New upstream release.
+    - updated plugin interface
+    - ctags plugin
+    - improved perl and N3 definitions
+
+ -- David Bremner <bremner@debian.org>  Wed, 23 May 2012 13:31:10 -0300
+
+highlight (3.8-2) unstable; urgency=low
+
+  * remove faulty postrm; this script caused a file owned by
+    highlight-common to be removed when highlight is removed.
+    This is related to, but does not fix #662748.
+
+ -- David Bremner <bremner@debian.org>  Tue, 06 Mar 2012 09:59:41 -0400
+
+highlight (3.8-1) unstable; urgency=low
+
+  * New upstream release
+    - removed patch to SWIG perl binding, now upstream
+    - Bug fix: "Shebang regexes to cover more use cases", thanks to Georgios
+      M. Zarkadas (Closes: #659384).
+    - Bug fix: "Shebangs match the entire first line and not the start of
+      it", thanks to Georgios M. Zarkadas (Closes: #659325).
+    - Bug fix: "HLCmdLineApp::getFileSuffix should search for dots only in
+      basename of the argument", thanks to Georgios M. Zarkadas
+      (Closes: #661072).
+    -fixed memory leak in astyle's SSFormatter (patch by MENG Wei)
+  * Bump Standards-Version to 3.9.3, no changes.
+
+ -- David Bremner <bremner@debian.org>  Sun, 04 Mar 2012 20:23:43 -0400
+
+highlight (3.7-2) unstable; urgency=low
+
+  * Put back missing patch for perl compilation flags
+    thanks to Joey Hess for reporting (Closes: #657901).
+
+ -- David Bremner <bremner@debian.org>  Sun, 29 Jan 2012 15:39:19 -0400
+
+highlight (3.7-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- David Bremner <bremner@debian.org>  Thu, 26 Jan 2012 22:40:15 -0400
+
+highlight (3.6-1) unstable; urgency=low
+
+  * New upstream release
+  * Drop patch "character literal breaks highlight", now upstream.
+  * Patch: Make compilation flags for perl extension match perl. Thanks
+    to Joey Hess for the report, Gregor Herrmann for the fix (Closes: #649759).
+
+ -- David Bremner <bremner@debian.org>  Sun, 27 Nov 2011 09:28:11 -0800
+
+highlight (3.5-3) unstable; urgency=low
+
+  * Cherry pick fix: "character literal breaks highlight", thanks to
+    kakadu for reporting.  (Closes: #639777). Thanks to André Simon for
+    the fast fix.
+
+ -- David Bremner <bremner@debian.org>  Wed, 31 Aug 2011 21:53:11 -0300
+
+highlight (3.5-2) unstable; urgency=low
+
+  * Build with default boost (1.46 currently).
+
+ -- David Bremner <bremner@debian.org>  Sat, 04 Jun 2011 11:27:12 -0300
+
+highlight (3.5-1) unstable; urgency=low
+
+  * New upstream release
+  * Bug fix: "highlight --force doesn't work", thanks to Stefan Bühler
+    (Closes: #628934).
+
+ -- David Bremner <bremner@debian.org>  Fri, 03 Jun 2011 19:03:23 -0300
+
+highlight (3.4-2) unstable; urgency=low
+
+  * Add "Breaks: gtk-doc-tools (<< 1.17-2)". (Closes: #623497)
+    - The command line arguments of version 3 are incompatible with version 2.
+  * Update Standards-version to 3.9.2 (no changes)
+
+ -- David Bremner <bremner@debian.org>  Sat, 23 Apr 2011 08:34:45 -0300
+
+highlight (3.4-1) unstable; urgency=low
+
+  * New upstream release
+  * Update Standards-version header to 3.9.1; actual upgrade already done.
+
+ -- David Bremner <bremner@debian.org>  Fri, 01 Apr 2011 09:51:04 -0300
+
+highlight (3.3-1) experimental; urgency=low
+
+  * New upstream version
+    - restores @highlight pass-through
+    
+ -- David Bremner <bremner@debian.org>  Wed, 29 Dec 2010 16:16:12 -0400
+
+highlight (3.2+svn19-1) experimental; urgency=low
+
+  * New upstream snapshot
+    - adds DataDir to swig interface.
+  * Fix changelog typos.
+  * Update standards version to 3.9.1
+    - remove Conflicts from highlight-common (there is a Breaks now).
+
+ -- David Bremner <bremner@debian.org>  Sat, 04 Dec 2010 11:24:27 -0400
+
+highlight (3.2-2) experimental; urgency=low
+
+  * Add versioned depends on highlight-common. Add breaks to
+    highlight-common (Closes: #605549).
+
+ -- David Bremner <bremner@debian.org>  Thu, 02 Dec 2010 17:46:23 -0400
+
+highlight (3.2-1) experimental; urgency=low
+
+  * New upstream release.
+  * Change email in uploaders.
+  * Remove DM-Upload-Allowed (no longer needed).
+
+ -- David Bremner <bremner@debian.org>  Thu, 18 Nov 2010 17:04:57 -0800
+
+highlight (2.16-1) unstable; urgency=low
+
+  * New Upstream Version
+    - includes new version (1.24) of astyle code
+    - some new and updated languages.
+    - update desktop file
+
+ -- David Bremner <bremner@unb.ca>  Fri, 02 Apr 2010 08:54:40 -0300
+
+highlight (2.15-1) unstable; urgency=low
+
+  * New Upstream Version
+  * Tidy up dh_make templates that crept into last source package
+  * DM-Upload-Allowed as of 2.14-1
+  * Update standards version to 3.8.4 (no changes)
+
+ -- David Bremner <bremner@unb.ca>  Tue, 02 Mar 2010 15:17:48 -0400
+
+highlight (2.14-1) unstable; urgency=low
+
+  * New Upstream 2.14
+  * convert to 3.0 (quilt) source format to support tar.bz2 upstream
+  
+ -- David Bremner <bremner@unb.ca>  Mon, 15 Feb 2010 08:55:16 -0400
+
+highlight (2.12-1) unstable; urgency=low
+
+  * New upstream release.
+  * Added co-maintainer (Closes:#541332)
+
+ -- Ayman Negm <negm@debian.org>  Tue, 29 Sep 2009 10:52:52 +0200
+
+highlight (2.11-1) unstable; urgency=low
+
+  * New upstream version.
+  * Change from co-maintainer/uploader to maintainer (Closes: #541332)
+  * Update standards version to 3.8.3 (no changes)
+  
+ -- David Bremner <bremner@unb.ca>  Thu, 27 Aug 2009 22:45:19 -0300
+
+highlight (2.10-1) unstable; urgency=low
+
+  * New upstream version.
+
+ -- David Bremner <bremner@unb.ca>  Thu, 25 Jun 2009 22:28:52 -0300
+
+highlight (2.9-2) unstable; urgency=low
+
+  * Fix FTBFS on amd64; add -fPIC, build library twice.  Thanks to
+    Enrico Zini for pointing out the problem and suggesting the fix.
+
+ -- David Bremner <bremner@unb.ca>  Sat, 06 Jun 2009 21:59:24 -0300
+
+highlight (2.9-1) unstable; urgency=low
+
+  * New Upstream Version
+  * New Co-Maintainer
+  * Split into highlight-common, highlight, and new package
+    libhighlight-perl (Closes: #529869)
+  * Update debian/changelog to include permission from Jeff Stuart
+    (Closes: #530250)
+  * Updated long description, based on upstream (Closes: #414209)
+  * Modified debhelper usage to handle DEB_BUILD_OPTIONS=nostrip
+    (Closes: #437164)
+  * Update standards version to 3.8.1; added Homepage field.
+
+ -- David Bremner <bremner@unb.ca>  Sat, 23 May 2009 19:03:57 -0300
+
+highlight (2.7-0.1) unstable; urgency=low
+
+  * Non-maintainer upload.
+  * New upstream version, Closes: #442212
+  * Add Martin Michlmayr's gcc-4.4 patch, Closes: #504887
+  * debian/control: Add homepage link
+  * maintainer badly MIA?
+
+ -- Riku Voipio <riku.voipio@iki.fi>  Mon, 02 Mar 2009 10:50:20 +0200
+
+highlight (2.4.8-1.1) unstable; urgency=medium
+
+  * Non-maintainer upload.
+  * Fix FTBFS with GCC 4.3 (Closes: #417223).
+
+ -- Luk Claes <luk@debian.org>  Sun, 09 Mar 2008 15:20:05 +0000
+
+highlight (2.4.8-1) unstable; urgency=low
+
+  * New upstream Release. (closes: #400956)
+  * Remove Conf dir in purging package (closes: #365362)
+
+ -- Ayman Negm <negm@debian.org>  Sat,  2 Dec 2006 14:00:51 +0100
+
+highlight (2.4.5-1) unstable; urgency=low
+
+  * New upstream Release.
+  * fix amd64 crash. (closes: #351092)
+
+ -- Ayman Negm <negm@debian.org>  Thu, 30 Mar 2006 17:44:36 +0200
+
+highlight (2.4.2-1) unstable; urgency=low
+
+  * New upstream Release.  (closes: #296802)
+
+ -- Ayman Negm <negm@debian.org>  Sun,  9 Oct 2005 10:11:27 +0200
+
+highlight (2.2.8-1) unstable; urgency=low
+
+  * New upstream Release.
+
+ -- Ayman Negm <negm@debian.org>  Wed, 23 Feb 2005 03:27:03 +0100
+
+highlight (2.2.7-1) unstable; urgency=low
+
+  * New upstream Release.
+
+ -- Ayman Negm <negm@debian.org>  Sun, 16 Jan 2005 05:00:22 +0100
+
+highlight (2.2.6-2) unstable; urgency=low
+
+  * applied patch to fix amd64 building error using gcc-4.0 
+    Thanks to Andreas Jochens <aj@andaco.de> (closes: #286352)
+
+ -- Ayman Negm <negm@debian.org>  Tue, 21 Dec 2004 21:09:35 +0100
+
+highlight (2.2.6-1) unstable; urgency=low
+
+  * New upstream Release.
+
+ -- Ayman Negm <negm@debian.org>  Wed,  8 Dec 2004 20:13:15 +0100
+
+highlight (2.2.5-1) unstable; urgency=low
+
+  * New upstream Release.
+
+ -- Ayman Negm <negm@debian.org>  Sun,  7 Nov 2004 10:19:39 +0100
+
+highlight (2.2.4-1) unstable; urgency=low
+
+  * New upstream Release.
+
+ -- Ayman Negm <negm@debian.org>  Sun,  3 Oct 2004 09:38:45 +0200
+
+highlight (2.2.2-1) unstable; urgency=low
+
+  * New upstream Release.
+
+ -- Ayman Negm <negm@debian.org>  Sat, 24 Jul 2004 23:09:14 +0200
+
+highlight (2.0.25-1) unstable; urgency=low
+
+  * New upstream Release.
+
+ -- Ayman Negm <negm@debian.org>  Thu,  8 Jul 2004 22:05:43 +0200
+
+highlight (2.0.23-1) unstable; urgency=low
+
+  * New upstream Release.
+
+ -- Ayman Negm <negm@debian.org>  Mon, 24 May 2004 22:23:12 +0200
+
+highlight (2.0.22-1) unstable; urgency=low
+
+  * New upstream Release.
+  * New Debian policy 3.6.1.
+
+ -- Ayman Negm <negm@debian.org>  Tue, 20 Apr 2004 19:29:15 +0200
+
+highlight (2.0.21-1) unstable; urgency=low
+
+  * New upstream Release.
+  * Upstream add user configurations support (closes: #238216)
+
+ -- Ayman Negm <negm@debian.org>  Fri, 26 Mar 2004 23:44:27 +0100
+
+highlight (2.0.20-1) unstable; urgency=low
+
+  * Initial Release.
+  * Fixed package description (closes: #236038)
+  * Upstream split the package (closes: #236271)
+
+ -- Ayman Negm <negm@debian.org>  Fri,  9 Mar 2004 20:46:43 +0100
+
+highlight (2.0.18-1) unstable; urgency=low
+
+  * Initial Release (closes: #218144).
+
+ -- Ayman Negm <negm@debian.org>  Fri,  20 Feb 2004 09:40:57 +0100
+
+  

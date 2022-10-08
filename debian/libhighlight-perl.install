@@ -1,0 +1,8 @@
+#!/usr/bin/perl -w
+
+use Config;
+
+my $vendorarch = substr($Config{vendorarch}, 1);
+
+print "extras/swig/highlight.so $vendorarch/auto/highlight\n";
+print "extras/swig/highlight.pm $vendorarch\n";

@@ -1,0 +1,4 @@
+# exported from git by git-debcherry
+0001-debcherry-fixup-patch.patch
+0002-add-CPPFLAGS-to-C-compilation-line.patch
+0003-Add-on-to-LDFLAGS-rather-than-overwriting-them.patch

@@ -1,0 +1,16 @@
+#!/usr/bin/make -f
+UPSTREAMTAG=upstream/3.3
+SOURCEPKG=$(shell dpkg-parsechangelog | sed  -n 's/^Source: \(.*\)/\1/p')
+UPSTREAM=$(shell dpkg-parsechangelog |  sed -n 's/^Version: \(.*\)-[^-]*/\1/p')
+ORIG=${SOURCEPKG}_${UPSTREAM}.orig.tar.bz2
+
+%: 
+	dh $@
+
+override_dh_auto_build:
+	dh_auto_build --sourcedirectory=extras/swig -- perl
+	dh_auto_build --sourcedirectory=src -- clean
+	dh_auto_build -- LUA_LIBS=-llua5.2
+
+get-orig-source: 
+	git archive --format=tar ${UPSTREAMTAG} | bzip2 -9 > ../${ORIG}

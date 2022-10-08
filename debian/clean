@@ -1,0 +1,5 @@
+extras/swig/*.so
+extras/swig/*.pm
+extras/swig/*.o
+extras/swig/highlight_wrap.cpp
+extras/swig/lib-stamp
