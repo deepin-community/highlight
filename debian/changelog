@@ -1,3 +1,9 @@
+highlight (3.41-2deepin0) unstable; urgency=medium
+
+  * No source change upload against GCC 12.
+
+ -- Tianyu Chen <sweetyfish@deepin.org>  Thu, 19 Sep 2024 22:49:07 +0800
+
 highlight (3.41-2) unstable; urgency=medium
 
   * Fix location of examples (Closes: #904727).
